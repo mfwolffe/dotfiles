@@ -1,0 +1,45 @@
+{
+    // FORTRAN DOCUMENTING :: HEADER (MD)
+    "Fortran Document :: Heading - Markdown": {
+      "scope": "markdown, plaintext",
+      "prefix": "FTRAN-heading-md",
+      "body": 
+        [":: $1 ::"],
+      "description": "Documenting Fortran Notes (markdown)"
+    },
+  
+    // FORTRAN DOCUMENTING :: HEADER (INLINE)
+    "Fortran Document :: Heading - Inline": {
+      "scope": "fortran",
+      "prefix": "FTRAN-heading-md",
+      "body": 
+        ["! :: $1 ::"],
+      "description": "Documenting Fortran Notes (markdown)"
+    },
+  
+    // FORTRAN DOCUMENTING :: FILE COMMENT
+    "MFW Fortran90 File Header": {
+      "scope": "fortran",
+      "prefix": "FTRAN-header",
+      "body": [
+        "! =====================================================================",
+        "! File:         ${1:filename}.f90",
+        "! Author:       @mfwolffe on gh (github.com/mfwolffe if you're as lazy)",
+        "!               as I am ;)",
+        "! Purpose:      ${2:Short description}",
+        "! Description:  ${3:Longer description}",
+        "!",
+        "! CHANGELOG:",
+        "!               ${CURRENT_YEAR}.${CURRENT_MONTH}.${CURRENT_DATE}:",
+        "!                 - start a changelog ;)",
+        "!                 - start a todo list",
+        "!                 - ${4:Custom Changelog item}",
+        "!",
+        "! TODOs:",
+        "!   - ${5:Custom todo item}",
+        "!",
+        "! ====================================================================="
+      ],
+      "description": "mfw fortran 90 file comment header with placeholders",
+    }
+}
