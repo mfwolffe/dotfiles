@@ -1,7 +1,7 @@
 {
     // FORTRAN DOCUMENTING :: HEADER (MD)
     "Fortran Document :: Heading - Markdown": {
-      "scope": "markdown, plaintext",
+      "scope": "markdown",
       "prefix": "FTRAN-heading-md",
       "body": 
         [":: $1 ::"],
@@ -41,5 +41,17 @@
         "! ====================================================================="
       ],
       "description": "mfw fortran 90 file comment header with placeholders",
+    },
+
+    "MFW ssg frontmatter": {
+      "prefix": "FRAWNTMATTER",
+      "body": [
+        "---",
+        "title:",
+        "date:",
+        "tags:",
+        "---",
+      ],
+      "Frontmatter for markdown files for the 'static site generator' I made for murmurs",
     }
 }
